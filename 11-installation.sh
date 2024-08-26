@@ -12,11 +12,11 @@ echo "User ID is: $USERID"
 
 dnf list installed git
 
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "Git is not installed, going to install it.."
     dnf install git -y
- if [ $? -ne 0] 
+ if [ $? -ne 0 ] 
  then
     echo "Git installation is not success...check it"
     exit 1
@@ -29,11 +29,11 @@ fi
  fi  
 
     dnf list installed mysql
-if [ $? -ne 0] 
+if [ $? -ne 0 ] 
 then
       echo "MYSQL is not installed...going to install"
       dnf  install mysql -y
-if [ $? -ne 0] 
+if [ $? -ne 0 ] 
 then 
        echo "MYSQL installation is failure..please check"
        exit 1
