@@ -32,7 +32,7 @@ if [  $1 -ne 0 ]
  for package in $@ # $@ refers to all arguments passed on it
  do
    dnf list installed $package
-   if [ $? -ne 0]
+   if [ $? -ne 0 ]
    then 
         echo " $package is not installed, going to install it.."
         dnf install $package -y
