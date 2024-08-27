@@ -52,7 +52,7 @@ for package in $@ # $@ refers to all arguments passed on it
         dnf install $package -y
         VALIDATE $? "Installing $package "&>>$LOG_FILE
   else
-       echo -e " $package is already $Y installed, nothing to do  $N" | tee -a $LOG_FILE  &>>$LOG_FILE
+       echo -e " $package is already $Y installed, nothing to do  $N" | tee -a $LOG_FILE &>>$LOG_FILE
 
  fi  
  done
