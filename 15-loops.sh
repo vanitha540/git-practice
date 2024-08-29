@@ -41,4 +41,4 @@ if [  $1 -ne 0 ]
        echo " $package is already installed, nothing to do it.."
 
  fi  
- done
+done
